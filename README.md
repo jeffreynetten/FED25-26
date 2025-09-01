@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.racerworldwide.net/
   
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Hoofdpagina 
   <img src="readme-images/pagina1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Productpagina
   <img src="readme-images/pagina2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>

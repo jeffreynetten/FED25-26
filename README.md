@@ -57,7 +57,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  -Niet aanwezig in de les. Ik ga proberen iemand te vinden die dit voor mij kan dan.
+  Of is het oke als ik dit zelf doe?
 
 </details>
 

@@ -37,15 +37,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.racerworldwide.net/
+  [https://www.racerworldwide.net/](https://www.twix.com/nl/)
   
   #### Screenshot(s) van de eerste pagina (small screen): 
   Hoofdpagina <br>
-  <img src="readme-images/pagina1screen.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/twix1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Productpagina <br>
-  <img src="readme-images/pagina2screen.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/twix2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 

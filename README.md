@@ -71,7 +71,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/snickersmenu.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### de tweede pagina: 
   <img src="readme-images/snickersproduct.png" width="375px" alt="breakdown van een dynamisch deel">
 
 

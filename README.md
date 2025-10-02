@@ -87,26 +87,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Ik had nog geen HTML dus heb vooral de feedback van andere overgenomen.
+  Hieronder is de lijst te vinden van de bevindingen die ik handig vond tijdens dit feedback gesprek.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  -Javascript altijd onderaan de pagina linken
+  -Geen hoofdletters gebruiken als het hele teksten zijn. Gebruik CSS om dit op te maken.
+  texttransform = uppercase
+  -check je favicon heb je die?
+  -header title moet je website en pagina naam hebben.
+  -3 stylesheets in totaal, voor beide pagina's en een basis sheet.
+  -1 niveau menu is maar nodig *hamburger menu niet in detail.
+  -Button is een actie, 
+  in de nav gebruik je over het algemeen A 
+  -logo moet in A
+  -CSS background image (decoratie) HTML image is voor informatie.
+  -Begin de opdracht met telefoon size scherm.
+  -CSS verstoppen mag met class. (How to hide content = a11y site)
 
 </details>
 

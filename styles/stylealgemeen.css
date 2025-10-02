@@ -5,7 +5,10 @@
   box-sizing:border-box;  
 }
 
-
+@font-face {
+	font-family: BeniBolt;
+	src: url(BeniBold.ttf);
+}
 
 
 
@@ -27,5 +30,29 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
+header {
+    background-color: #410c00;
+	color: #eee;
+	list-style: none;
+}
+
+h1 {
+	font-family: BeniBolt;
+}
+
+h2 {
+	font-family: BeniBolt;
+}
+
+nav {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	font-family: BeniBolt;
+}
+
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+}

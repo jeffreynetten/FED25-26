@@ -10,7 +10,10 @@
 	src: url(BeniBold.ttf);
 }
 
-
+@font-face {
+	font-family: Ffmark;
+	src: url(FF\ Mark-Bold.otf);
+}
 
 
 /*********************/
@@ -30,29 +33,99 @@
 /* JOUW STYLING */
 /****************/
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 header {
+	width: 100%;
     background-color: #410c00;
 	color: #eee;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+}
+
+header nav {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+header nav img {
+	width: 100px;
+	margin: 20px;
+}
+
+header ul {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+header li {
 	list-style: none;
 }
 
-h1 {
-	font-family: BeniBolt;
+header li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transition: 0.3s;
 }
 
-h2 {
-	font-family: BeniBolt;
+header ul li a:hover{
+	color: #ffd166;
 }
 
-nav {
-	font-family: Arial, Helvetica, sans-serif;
+div {
+	display: none;
+	cursor: pointer;
+	font-size: 30px;
+
 }
 
-a {
-	font-family: BeniBolt;
+div i {
+	color: white;
 }
 
-footer {
-	font-family: Arial, Helvetica, sans-serif;
+@media (max-width:768px){
+	header nav ul{
+		display: none;
+		flex-direction: column;
+		background: black;
+		top: 75px;
+		right: 0;
+		width: 200px;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	header nav ul.active{
+		display: flex;
+	}
+
+	div {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+}
+
+footer ul {
+	background-color:#fdc33e;
+	width: 100%;
+}
+
+footer img {
+	background-color:#fdc33e;
+	width: 100%;
 }

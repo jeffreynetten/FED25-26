@@ -235,5 +235,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   6. https://www.youtube.com/watch?v=Nef3xAYhquE (Bijleren van de basis + hamburger menu)
   7. https://www.youtube.com/watch?v=AAU25Fo4bFY (Custom fonts)
   8. https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen (help))
+  9. https://www.youtube.com/watch?v=_ir9du6fq4Q (navigatie tussen pagina's vanuit html)
 
 </details>

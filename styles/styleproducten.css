@@ -29,3 +29,128 @@
 
 /* jouw code */
 
+section:nth-of-type(1) {
+	justify-content: space-between;
+	align-items: wrap;
+	color: black;
+	background-image: url(/images/achtergrond.jpeg);
+}
+
+section:nth-of-type(1) p {
+	padding-top: 240px;
+	margin-bottom: 30px;
+    margin-left: 10px;
+	font-size: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+section:nth-of-type(1) h1 {
+    margin-left: 10px;
+	padding-bottom: 30px;
+	font-size: 100px;
+	font-family: "BeniBolt" ;
+}
+
+section:nth-of-type(2) {
+	color: white;
+	background-color: #fdc33e;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: "BeniBolt" ;
+}
+
+section:nth-of-type(2) img {
+	width: 55%;
+	padding-top: 100px;
+	margin-bottom: 50px;
+    margin-left: 20%;
+}
+
+section:nth-of-type(2) h2 {
+    margin-left: 10px;
+	padding-bottom: 30px;
+	font-size: 35px;
+	padding-top: 50px;
+	font-family: "Ffmark" ;
+	text-transform: uppercase;
+}
+
+section:nth-of-type(2) button {
+	    margin-bottom: 40px;
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        margin-left: 10px;
+}
+
+button {
+	width: 130px;
+	height: 50px;
+	font:inherit;
+	font-size: 10px;
+	appearance: none;
+	border: none;
+	background-color: darkblue;
+	color: white;
+	border-radius: 1000em;
+	padding: 0.8em 0.8em 0.8em;
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+
+
+button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: darkblue;
+}
+
+
+section:nth-of-type(3) {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color:#eee;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: "BeniBolt" ;
+}
+
+section:nth-of-type(3) img {
+	padding-top: 40px;
+	margin-bottom: 30px;
+    margin-left: 20%;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(3) h2 {
+    margin-left: 10px;
+	padding-bottom: 30px;
+	font-size: 35px;
+	font-family: "Ffmark" ;
+	text-transform: uppercase;
+}
+
+section:nth-of-type(3) button {
+	    margin-bottom: 40px;
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        margin-left: 10%;
+}
+
+section:nth-of-type(3) ul {
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(3) li {
+	background-color: #410c00;
+    padding-top: 40px;
+	margin-bottom: 30px;
+    margin-left: 30%;
+    text-decoration: none;
+	color: white;
+	font-weight: bold;
+	list-style: none;
+}

@@ -121,26 +121,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Ik heb nu de basis van mijn HTML uitgewerkt en een begin gemaakt aan de CSS.
+  Ik ga vooral vragen of mijn html nu correct is zodat ik volledig kan gaan focusen op mijn CSS.
   
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  De html zou nu moeten kloppen qua opstelling.
+  Ik moet alleen nog gaan kijken naar de extension simplify/beautify omdat de spacing niet op 
+  alle plaatsen correct is.
+
+  Ik heb meegekeken bij de andere die feedback kregen en snap nu hoe je je eigen font in het 
+  bestand kan plaatsen. Dat is daarbij ook het eerste wat ik ga doen.
 
 </details>
 

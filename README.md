@@ -163,17 +163,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De afgelopen dagen ben ik veel opgeschoten met mijn opdracht.
+  Zo ben ik begonnen en heb ik een hele sprint met mijn html gedaan.
+  Ik heb een start gemaakt aan de hamburger menu.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Vragen voor de meeting:
+  - Vraag over: Footer heeft op 1 of andere manier mijn animatie van me header voor een klein stukje
+  - alignment klopt niet op alle plekken en krijg het niet correct
+  - animatie button zijwaards maken
+  - hamburger menu linken
+  - font een probleem?
+  - video op de achtergrond
+  - image op de achtergrond
 
 
   ### Verslag van meeting
@@ -224,8 +227,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://www.youtube.com/watch?v=-unASUgYtVI
-  2. https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3
-  3. 
+  1. Button tijdens de les
+  2. https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3 (Bijleren van de basis)
+  3. https://www.youtube.com/watch?v=4wo4csHfabw (folder github)
+  4. https://www.youtube.com/watch?v=_oFWg_NlKdo (css background image/gif)
+  5. https://www.youtube.com/watch?v=dMxOojFq2ho&t=69s (nth of type)
+  6. https://www.youtube.com/watch?v=Nef3xAYhquE (Bijleren van de basis + hamburger menu)
+  7. https://www.youtube.com/watch?v=AAU25Fo4bFY (Custom fonts)
+  8. https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen (help))
 
 </details>

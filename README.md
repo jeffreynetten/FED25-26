@@ -178,6 +178,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - video op de achtergrond
   - image op de achtergrond
 
+    Wat ik nog moet doen voordat ik een eindproduct heb:
+    - Javascript
+    - Light/dark mode
+    - hamburger linken
+    - css afmaken
+    - responsive maken
+    - Video op de achtergrond krijgen
+    - Animaties toevoegen bij hover
+    - Footer afmaken
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

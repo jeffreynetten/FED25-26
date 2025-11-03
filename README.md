@@ -192,10 +192,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Button animatie uitleg
+  - Video op achtergrond af laten spelen uitleg
 
 </details>
 
@@ -246,5 +244,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   7. https://www.youtube.com/watch?v=AAU25Fo4bFY (Custom fonts)
   8. https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen (help))
   9. https://www.youtube.com/watch?v=_ir9du6fq4Q (navigatie tussen pagina's vanuit html)
+  10. https://www.youtube.com/watch?v=3T0gjtXRNC0 (grids in css responsive maken)
+  11. https://www.w3schools.com/css/css_grid.asp (grid layout guide)
 
 </details>

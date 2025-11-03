@@ -23,69 +23,64 @@
 
 
 
+
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
 
-section:nth-of-type(1) {
-	background-size: 200px;
+
+
+/* Eerste section waar video op de achtergrond speelt */
+main section:nth-of-type(1) {
 	justify-content: space-between;
-	align-items: wrap;
 	color: white;
-	background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDl5YnE2ejJ4YTkxMHY0Zjk0azkwdDIxeGQ1MzEzcmlxcnd5cXQ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xXjIVvfvkvqZG/giphy.gif);
 	background-position: center;
 	background-repeat: repeat;
 	font-family: "BeniBolt" ;
+	position: relative;
+	overflow: hidden;
 }
 
-section:nth-of-type(1) p {
-	padding-top: 240px;
-	margin-bottom: 30px;
-    margin-left: 10px;
+main section:nth-of-type(1) p {
+	padding-top: 10em;
+	margin-bottom: 1em;
+    margin-left: 2em;
 	font-size: 15px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-transform: uppercase;
 }
 
-section:nth-of-type(1) h1 {
-    margin-left: 10px;
+main section:nth-of-type(1) h1 {
+    margin-left: 0.5em;
 	padding-bottom: 30px;
 	font-size: 48px;
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(1) button {
-    margin-bottom: 240px;
+main section:nth-of-type(1) button {
+    margin-bottom: 10em;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    margin-left: 10px;
+    margin-left: 1em;
+	width: 13em;
 }
 
-button {
-	width: 130px;
-	height: 50px;
-	font:inherit;
-	font-size: 10px;
-	appearance: none;
-	border: none;
-	background-color: darkblue;
-	color: white;
-	border-radius: 1000em;
-	padding: 0.8em 0.8em 0.8em;
-	transition: 0.5s;
-	text-transform: uppercase;
+video {
+	position: absolute;
+	width: 200%;
+	margin-left: 0;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
 }
 
 
-button:hover {
-	cursor: pointer;
-	background-color: white;
-	color: darkblue;
-}
+/* 2e section waar het gaat over snickers creamy */
 
-
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
 	color: white;
 	background-color: #fdc33e;
 	background-position: center;
@@ -93,92 +88,151 @@ section:nth-of-type(2) {
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(2) img {
-	padding-top: 100px;
-	margin-bottom: 30px;
-    margin-left: 20%;
+main section:nth-of-type(2) img {
+	padding-top: 20%;
+	margin-bottom: 15%;
+    margin-left: 15%;
+	width: 17em;
 }
 
-section:nth-of-type(2) h2 {
-    margin-left: 10px;
-	padding-bottom: 30px;
-	font-size: 35px;
+#bewegen {
+  animation: MoveUp 3s linear infinite;}
+
+@keyframes MoveUp {
+    from{transform:translateY(10%)
+	}
+}
+
+
+
+main section:nth-of-type(2) h2 {
+    margin-left: 5%;
+	margin-right: 10% ;
+	padding-bottom: 8%;
+	font-size: 1.7em;
 	font-family: "Ffmark" ;
 	text-transform: uppercase;
 }
 
-section:nth-of-type(2) button {
+main section:nth-of-type(2) button {
 	    margin-bottom: 40px;
 		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        margin-left: 10px;
+        margin-left: 5%;
 }
 
-section:nth-of-type(3) {
-	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
+
+
+/* 3e section waar het 3 soorten snickers worden uitgelicht */
+
+main section:nth-of-type(3) {
+	width: 100%;
 	background-color:#eee;
 	background-position: center;
 	background-repeat: no-repeat;
-	font-family: "BeniBolt" ;
-}
-
-section:nth-of-type(3) img {
-	padding-top: 40px;
-	margin-bottom: 30px;
-    margin-left: 30%;
-	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
-}
-
-section:nth-of-type(3) h2 {
-    margin-left: 10px;
-	padding-bottom: 30px;
-	font-size: 35px;
 	font-family: "Ffmark" ;
+    display:grid;
+}
+
+
+main section:nth-of-type(3) h2 {
+	font-family: "BeniBolt" ;
 	text-transform: uppercase;
+	justify-content: center;
+	text-align: center;
+	margin-top: 10%;
+	font-size: 3em;
+	margin-bottom: 1em;
+
 }
 
-section:nth-of-type(3) button {
-	    margin-bottom: 40px;
-		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        margin-left: 10px;
+main section:nth-of-type(3) button {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
-section:nth-of-type(4) img {
+main section:nth-of-type(3) ul {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+main section:nth-of-type(3) li {
+display: flex;
+flex-direction: column;
+align-items: center;
+list-style: none;
+font-size: 25px;
+text-transform: uppercase;
+}
+
+main section:nth-of-type(3) img {
+margin-bottom: 1em;
+margin-top: 1em;
+width: 13em;
+}
+
+/* image animatie die in de 4e sectie te vinden is */
+
+#snickerbewegen {
+	transition:1s;
+}
+
+#snickerbewegen:hover {
+
+  scale:1.1;
+}
+
+/* 4e section waar een image staat afgebeeld */
+
+
+main section:nth-of-type(4) {
+		background-color:#410c00;
+}
+ 
+main section:nth-of-type(4) img {
 	width: 100%;
 	justify-content: space-between;
 	align-items: wrap;
 	color: white;
 }
 
-section:nth-of-type(5) {
+
+
+/* 5e section waarbij er word gepraat over snickers ice cream */
+
+main section:nth-of-type(5) {
 	color: white;
 	background-color:#410c00;
+	width: 100%;
 	font-family: "BeniBolt" ;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-section:nth-of-type(5) p {
-	padding-top: 50px;
-	margin-bottom: 30px;
-    margin-left: 10px;
+main section:nth-of-type(5) p {
+	margin-top: 0.5em;;
+	padding-top: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-size: 15px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-transform: uppercase;
+	text-align: center;
 }
 
-section:nth-of-type(5) h3 {
-    margin-left: 10px;
-	padding-bottom: 30px;
+main section:nth-of-type(5) h3 {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
 	font-size: 48px;
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(5) button {
-    margin-bottom: 50px;
+main section:nth-of-type(5) button {
+    margin-bottom: 4em;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    margin-left: 10px;
+    margin-top: 2em;
+	width: 11em;
 }
-

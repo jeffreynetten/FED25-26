@@ -29,30 +29,33 @@
 
 /* jouw code */
 
-section:nth-of-type(1) {
+/* sectie 1 het gedeelte met de motto van snickers */
+
+main section:nth-of-type(1) {
 	justify-content: space-between;
 	align-items: wrap;
-	color: black;
-	background-image: url(/images/achtergrond.jpeg);
-}
-
-section:nth-of-type(1) p {
-	padding-top: 240px;
-	margin-bottom: 30px;
-    margin-left: 10px;
-	font-size: 15px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	text-transform: uppercase;
-}
-
-section:nth-of-type(1) h1 {
-    margin-left: 10px;
-	padding-bottom: 30px;
-	font-size: 100px;
+	color: white;
+	background-color: #410c00;
+	background-position: center;
+	background-repeat: repeat;
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(2) {
+
+main section:nth-of-type(1) h1 {
+    margin-left: 0.5em;
+	margin-right: 0.5em;
+	padding-bottom: 6em;
+	padding-top: 6em;
+	font-size: 48px;
+	font-family: "BeniBolt" ;
+	text-align: center;
+}
+
+
+/* 2e section waar het gaat over snickers creamy */
+
+main section:nth-of-type(2) {
 	color: white;
 	background-color: #fdc33e;
 	background-position: center;
@@ -60,97 +63,178 @@ section:nth-of-type(2) {
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(2) img {
-	width: 55%;
-	padding-top: 100px;
-	margin-bottom: 50px;
-    margin-left: 20%;
+main section:nth-of-type(2) img {
+	padding-top: 20%;
+	margin-bottom: 15%;
+    margin-left: 15%;
+	width: 14em;
 }
 
-section:nth-of-type(2) h2 {
-    margin-left: 10px;
-	padding-bottom: 30px;
-	font-size: 35px;
-	padding-top: 50px;
+#bewegen {
+  animation: MoveUp 3s linear infinite;}
+
+@keyframes MoveUp {
+    from{transform:translateY(10%)
+	}
+}
+
+
+
+main section:nth-of-type(2) h2 {
+    margin-left: 5%;
+	margin-right: 10% ;
+	padding-bottom: 8%;
+	font-size: 1.7em;
 	font-family: "Ffmark" ;
 	text-transform: uppercase;
 }
 
-section:nth-of-type(2) button {
+main section:nth-of-type(2) button {
 	    margin-bottom: 40px;
 		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        margin-left: 10px;
-}
-
-button {
-	width: 130px;
-	height: 50px;
-	font:inherit;
-	font-size: 10px;
-	appearance: none;
-	border: none;
-	background-color: darkblue;
-	color: white;
-	border-radius: 1000em;
-	padding: 0.8em 0.8em 0.8em;
-	transition: 0.5s;
-	text-transform: uppercase;
+        margin-left: 5%;
 }
 
 
-button:hover {
-	cursor: pointer;
-	background-color: white;
-	color: darkblue;
-}
 
+/* 3e section waar het filteren van producten mogelijk is */
 
-section:nth-of-type(3) {
-	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
+main section:nth-of-type(3) {
+	width: 100%;
 	background-color:#eee;
 	background-position: center;
 	background-repeat: no-repeat;
+	font-family: "Ffmark" ;
+}
+
+
+main section:nth-of-type(3) h3 {
+	font-family: "BeniBolt" ;
+	text-transform: uppercase;
+	justify-content: center;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 3em;
+	margin-bottom: 5%;
+}
+
+main section:nth-of-type(3) button {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	place-items: center;
+}
+
+main section:nth-of-type(3) form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	padding-top: 2em;
+}
+
+main section:nth-of-type(3) form button {
+grid-column: 2;
+}
+
+
+main section:nth-of-type(3) ul {
+list-style: none;
+margin-left: 2em;
+margin-right: 2em;
+padding-bottom: 2em;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main section:nth-of-type(3) li {
+align-items: center;
+list-style: none;
+font-size: 25px;
+text-transform: uppercase;
+background-color: #410c00;
+border-radius: 2em;
+margin: 1em;
+align-content: center;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 0.5fr 0.5fr 0.2fr;
+place-items: center;
+}
+
+
+main section:nth-of-type(3) img {
+margin-bottom: 0.5em;
+margin-top: 0.5em;
+margin-left: 1.4em;
+margin-right: 1.4em;;
+width: 80%;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+main section:nth-of-type(3) p {
+	font-size: 0.7em;
+	width: 80%;
+	text-transform: none;
+	color: white;
+	margin-left: 2em;
+	margin-right: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+	text-align: center;
+}
+
+/* image animatie die in de 4e sectie te vinden is */
+
+#snickerbewegen:hover {
+  animation: snickerbewegen 3s ;
+  animation-fill-mode: forwards; ;}
+
+@keyframes snickerbewegen {
+0% {
+    scale:1;
+  }
+100% {
+    scale:1.1;
+  }
+}
+
+/* 4e section waarbij er word doorgelinkt naar de geschiedenis van Snickers*/
+
+main section:nth-of-type(4) {
+	color: white;
+	background-color:#410c00;
+	width: 100%;
+	font-family: "BeniBolt" ;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+main section:nth-of-type(4) p {
+	padding-top: 0.5em;;
+	padding-top: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 15px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main section:nth-of-type(4) h3 {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	font-size: 48px;
 	font-family: "BeniBolt" ;
 }
 
-section:nth-of-type(3) img {
-	padding-top: 40px;
-	margin-bottom: 30px;
-    margin-left: 20%;
-	justify-content: space-between;
-	display: flex;
-	flex-direction: column;
+main section:nth-of-type(4) button {
+    margin-bottom: 4em;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin-top: 2em;
+	width: 13em;
+	font-size: 0.6em;
 }
 
-section:nth-of-type(3) h2 {
-    margin-left: 10px;
-	padding-bottom: 30px;
-	font-size: 35px;
-	font-family: "Ffmark" ;
-	text-transform: uppercase;
-}
-
-section:nth-of-type(3) button {
-	    margin-bottom: 40px;
-		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        margin-left: 10%;
-}
-
-section:nth-of-type(3) ul {
-	display: flex;
-	flex-direction: column;
-}
-
-section:nth-of-type(3) li {
-	background-color: #410c00;
-    padding-top: 40px;
-	margin-bottom: 30px;
-    margin-left: 30%;
-    text-decoration: none;
-	color: white;
-	font-weight: bold;
-	list-style: none;
-}

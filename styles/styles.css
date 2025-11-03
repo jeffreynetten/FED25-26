@@ -33,11 +33,15 @@
 /* JOUW STYLING */
 /****************/
 
+/* Main */
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* Header */
 
 header {
 	width: 100%;
@@ -85,6 +89,9 @@ header ul li a:hover{
 	color: #ffd166;
 }
 
+
+/* Hamburger menu */
+
 div {
 	display: none;
 	cursor: pointer;
@@ -120,12 +127,193 @@ div i {
 	}
 }
 
-footer ul {
-	background-color:#fdc33e;
+
+
+/* Footer eerste sectie met snickers logo en kleine navigatie */
+
+footer section:nth-of-type(1) {
+	background-image: none;
 	width: 100%;
+    background-color:#fdc33e;
+	color: #410c00;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+	display: flex;
+	flex-direction: column;
 }
 
-footer img {
-	background-color:#fdc33e;
+footer section:nth-of-type(1) img {
+	width: 20%;
+	margin-left: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+footer section:nth-of-type(1) ul {
+	margin-left: 1em;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+footer section:nth-of-type(1) li {
+	margin: 0.5em;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+/* Footer 2e sectie met social media links */
+
+
+footer section:nth-of-type(2) {
+	background-image: none;
 	width: 100%;
+    background-color: #410c00;
+	color: #eee;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+}
+
+footer section:nth-of-type(2) p {
+	margin-left: 2em;
+	padding-top: 2em;
+}
+
+footer section:nth-of-type(2) ul {
+	display: flex;
+	flex-direction: row;
+    color: white;
+	list-style: none;
+	margin-left: 1em;
+}
+
+footer section:nth-of-type(2) li {
+    margin: 0.8em;
+}
+
+
+
+
+/* Footer derde sectie met grote navigatie */
+footer section:nth-of-type(3) {
+	background-image: none;
+	width: 100%;
+    background-color: #410c00;
+	color: #eee;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+}
+
+footer section:nth-of-type(3) nav{
+	display: flex;
+	flex-direction: column;
+}
+
+footer section:nth-of-type(3) ul {
+	display: grid;
+    grid-template-columns:1fr 1fr ;
+	font-weight: bold;
+	list-style: none;
+    padding-bottom: 1em;
+	padding-left: 1em;
+}
+
+footer section:nth-of-type(3) li{
+	font-size: 15px;
+	margin: 1em;
+	text-align: left;
+}
+
+/* Footer 4e sectie met eindtekst */
+
+footer section:nth-of-type(4) {
+	background-image: none;
+	width: 100%;
+    background-color: #410c00;
+	color: #eee;
+	font-size: 15px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+footer section:nth-of-type(4) p {
+    font-size: 15px;
+	margin-left: 5%;
+	margin-right: 10%;
+	text-align: left;
+}
+
+footer button {
+	width: 8em;
+	height: 3em;
+	font:inherit;
+	font-size: 14px;
+	appearance: none;
+	border: none;
+	background-image:linear-gradient(45deg, white 50%, #410c00 50%);
+	background-size:250% 100%;
+	background-position:right;
+	color: white;
+	border-radius: 1000em;
+	padding: 0.8em 0.8em 0.8em;
+	transition: 0.5s;
+	text-transform: uppercase;
+	outline-style:groove;
+	margin-left: 5%;
+	margin-top: 1em;
+	margin-bottom: 5em;
+}
+
+footer  button:hover {
+	cursor: pointer;
+	color: #410c00;
+	background-position:left;
+}
+
+footer a {
+	font-family: "BeniBolt" ;
+	font-size: 2.2em;
+	margin-left: 5%;
+	margin-top: 1em;
+	text-align: left;
+}
+
+footer p:nth-of-type(3) {
+	margin-top: 2em;
+	text-align: left;
+}
+
+
+/* Button animatie en opmaak */
+
+button {
+	width: 8em;
+	height: 4em;
+	font:inherit;
+	font-size: 14px;
+	appearance: none;
+	border: none;
+	background-image:linear-gradient(45deg, white 50%, blue 50%);
+	background-size:250% 100%;
+	background-position:right;
+	color: white;
+	border-radius: 1000em;
+	padding: 0.8em 0.8em 0.8em;
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+
+
+button:hover {
+	cursor: pointer;
+	color: blue;
+	background-position:left;
 }

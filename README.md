@@ -235,16 +235,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. Button tijdens de les
+  1. Button design tijdens de les
   2. https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3 (Bijleren van de basis)
   3. https://www.youtube.com/watch?v=4wo4csHfabw (folder github)
   4. https://www.youtube.com/watch?v=_oFWg_NlKdo (css background image/gif)
   5. https://www.youtube.com/watch?v=dMxOojFq2ho&t=69s (nth of type)
-  6. https://www.youtube.com/watch?v=Nef3xAYhquE (Bijleren van de basis + hamburger menu)
+  6. https://www.youtube.com/watch?v=Nef3xAYhquE (Bijleren van de basis)
   7. https://www.youtube.com/watch?v=AAU25Fo4bFY (Custom fonts)
-  8. https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen (help))
+  8. https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen)
   9. https://www.youtube.com/watch?v=_ir9du6fq4Q (navigatie tussen pagina's vanuit html)
   10. https://www.youtube.com/watch?v=3T0gjtXRNC0 (grids in css responsive maken)
   11. https://www.w3schools.com/css/css_grid.asp (grid layout guide)
+  12. https://www.youtube.com/watch?v=XGKj4HtIcGo (custom properties)
+  13. https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping (image swapping)
+  14. https://www.youtube.com/watch?v=n9yI6fjkrfE (media queries)
 
 </details>

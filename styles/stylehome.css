@@ -10,19 +10,6 @@
 
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -33,9 +20,11 @@
 
 
 /* Eerste section waar video op de achtergrond speelt */
+/*Bron: https://www.youtube.com/watch?v=-unASUgYtVI (Video op de achtergrond afspelen)*/
+
 main section:nth-of-type(1) {
 	justify-content: space-between;
-	color: white;
+	color: var(--color-text);
 	background-position: center;
 	background-repeat: repeat;
 	font-family: "BeniBolt" ;
@@ -68,7 +57,7 @@ main section:nth-of-type(1) button {
 
 video {
 	position: absolute;
-	width: 200%;
+	height: 100%;
 	margin-left: 0;
 	top: 0;
 	left: 0;
@@ -77,12 +66,23 @@ video {
 	z-index: -1;
 }
 
+@media (width > 700px) {
+video {
+    height: 200%;
+	position: absolute;
+	z-index: -1;
+	margin-bottom: 10em;
+}
+}
+
 
 /* 2e section waar het gaat over snickers creamy */
+/*Bron: https://www.w3schools.com/css/css_grid.asp (grid layout guide)*/
+
 
 main section:nth-of-type(2) {
 	color: white;
-	background-color: #fdc33e;
+	background-color: var(--color-button2);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "BeniBolt" ;
@@ -120,13 +120,47 @@ main section:nth-of-type(2) button {
         margin-left: 5%;
 }
 
+@media (width > 700px) {
+	main section:nth-of-type(2){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+		gap: 2em;
+		padding-top: 2em;
+	}
+
+	main section:nth-of-type(2) img {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		width: 19em;
+	}
+
+	main section:nth-of-type(2) h2 {
+		align-self: end;
+		padding-bottom: 0%;
+		margin-bottom: 0%;
+		font-size: 2.5em;
+	}
+}
+
+@media (width > 1000px) {
+	main section:nth-of-type(2) h2 {
+		font-size: 3em;
+	}
+
+	main section:nth-of-type(2) img {
+		width: 23em;
+	}
+}
+
 
 
 /* 3e section waar het 3 soorten snickers worden uitgelicht */
 
 main section:nth-of-type(3) {
 	width: 100%;
-	background-color:#eee;
+	background-color:var(--color-basebackground3);
+	color: var(--color-text2);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "Ffmark" ;
@@ -187,14 +221,33 @@ width: 13em;
 
 
 main section:nth-of-type(4) {
-		background-color:#410c00;
+		background-color: var(--color-background);
 }
  
-main section:nth-of-type(4) img {
+main section:nth-of-type(4) img:nth-of-type(1) {
 	width: 100%;
 	justify-content: space-between;
 	align-items: wrap;
 	color: white;
+	display: block;
+}
+
+main section:nth-of-type(4) img:nth-of-type(2) {
+	width: 100%;
+	justify-content: space-between;
+	align-items: wrap;
+	color: white;
+	display: none;
+}
+
+@media (width > 700px) {
+	main section:nth-of-type(4) img:nth-of-type(1) {
+		display: none;
+	}
+
+	main section:nth-of-type(4) img:nth-of-type(2) {
+		display: block;
+    }
 }
 
 
@@ -202,8 +255,7 @@ main section:nth-of-type(4) img {
 /* 5e section waarbij er word gepraat over snickers ice cream */
 
 main section:nth-of-type(5) {
-	color: white;
-	background-color:#410c00;
+	color: var(--color-text);
 	width: 100%;
 	font-family: "BeniBolt" ;
 	display: flex;
@@ -224,7 +276,6 @@ main section:nth-of-type(5) p {
 }
 
 main section:nth-of-type(5) h3 {
-	padding-bottom: 0.5em;
 	padding-top: 0.5em;
 	font-size: 48px;
 	font-family: "BeniBolt" ;
@@ -235,4 +286,51 @@ main section:nth-of-type(5) button {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     margin-top: 2em;
 	width: 11em;
+}
+
+main section:nth-of-type(5) img:nth-of-type(1) {
+	position: absolute;
+	height: auto;
+	padding-bottom: 20em;
+	z-index: -1;
+	background-size: cover;
+	display: block;
+	max-width: 100%;
+}
+
+main section:nth-of-type(5) img:nth-of-type(2) {
+	display: none;
+}
+
+@media (width > 700px) {
+main section:nth-of-type(5) img:nth-of-type(1) {
+	display: none;
+	}
+
+	main section:nth-of-type(5) img:nth-of-type(2) {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+
+main section:nth-of-type(5) h3 {
+	font-size: 60px;
+
+}
+    
+}
+
+@media (width > 900px) {
+main section:nth-of-type(5) img:nth-of-type(1) {
+	display: none;
+	}
+
+	main section:nth-of-type(5) img:nth-of-type(2) {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+    
 }

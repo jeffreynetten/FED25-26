@@ -5,6 +5,10 @@
   box-sizing:border-box;  
 }
 
+
+/*Bron: https://www.youtube.com/watch?v=AAU25Fo4bFY (Custom fonts)*/
+
+
 @font-face {
 	font-family: BeniBolt;
 	src: url(BeniBold.ttf);
@@ -18,11 +22,41 @@
 
 /*********************/
 /* CUSTOM PROPERTIES */
+/*Bron: https://www.youtube.com/watch?v=XGKj4HtIcGo (custom properties)*/
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:white;
+	--color-background:#410c00;
+	--color-button:#210082;
+	--color-background2:black;
+	--color-button2:#ffd166;
+	--color-basebackground:white;
+	--color-text2:black;
+	--color-basebackground3:white;
+
+	--colordarkmode-text:white;
+	--colordarkmode-background:#353535;
+	--colordarkmode-button:darkgrey;
+	--colordarkmode-background2:#353535;
+	--colordarkmode-button2:#410c00;
+	--colordarkmode-basebackground: #353535;
+	--colordarkmode-text2:white;
+	--colordarkmode-basebackground3:#410c00;
+
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text: var(--colordarkmode-text);
+		--color-background: var(--colordarkmode-background);
+		--color-button: var(--colordarkmode-button);
+		--color-background2: var(--colordarkmode-background2);
+		--color-button2: var(--colordarkmode-button2);
+		--color-text2: var(--colordarkmode-text2);
+		--color-basebackground: var(--colordarkmode-basebackground);
+		--color-basebackground3:var(--colordarkmode-basebackground3);
+	}
 }
 
 
@@ -45,8 +79,8 @@
 
 header {
 	width: 100%;
-    background-color: #410c00;
-	color: #eee;
+    background-color: var(--color-background);
+	color: var(--color-text);
 	font-size: 20px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -57,15 +91,28 @@ header nav {
 	max-width: 1200px;
 	margin: auto;
 	display: flex;
-	align-items: center;
+	align-items:center;
 	justify-content: space-between;
 	position: relative;
 	flex-wrap: wrap;
 }
 
-header nav img {
+/*Bron: https://www.youtube.com/watch?v=dMxOojFq2ho&t=69s (nth of type)
+*/
+
+
+header nav img:nth-of-type(1) {
 	width: 100px;
+	height: 100px;
 	margin: 20px;
+}
+
+
+
+header nav img:nth-of-type(2) {
+	width: 3em;
+	height: 3em;
+	margin: 20px;    
 }
 
 header ul {
@@ -80,62 +127,31 @@ header li {
 
 header li a {
 	text-decoration: none;
-	color: white;
+	color: var(--color-text);
 	font-weight: bold;
 	transition: 0.3s;
 }
 
 header ul li a:hover{
-	color: #ffd166;
+	color: var(--color-button2);
 }
 
 
-/* Hamburger menu */
+@media (max-width: 768px) {}
 
-div {
-	display: none;
-	cursor: pointer;
-	font-size: 30px;
 
-}
 
-div i {
-	color: white;
-}
-
-@media (max-width:768px){
-	header nav ul{
-		display: none;
-		flex-direction: column;
-		background: black;
-		top: 75px;
-		right: 0;
-		width: 200px;
-		padding: 20px;
-		border-radius: 10px;
-	}
-
-	header nav ul.active{
-		display: flex;
-	}
-
-	div {
-		display: block;
-		position: absolute;
-		right: 20px;
-		top: 20px;
-	}
-}
 
 
 
 /* Footer eerste sectie met snickers logo en kleine navigatie */
+/*Bron: https://www.youtube.com/watch?v=Nef3xAYhquE (Bijleren van de basis)*/
 
 footer section:nth-of-type(1) {
 	background-image: none;
 	width: 100%;
-    background-color:#fdc33e;
-	color: #410c00;
+    background-color: var(--color-button2);
+	color: var(--color-text);
 	font-size: 20px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -143,8 +159,8 @@ footer section:nth-of-type(1) {
 	flex-direction: column;
 }
 
-footer section:nth-of-type(1) img {
-	width: 20%;
+footer section:nth-of-type(1) ul li img {
+	width: 4em;
 	margin-left: 2em;
 	margin-bottom: 1em;
 	margin-top: 1em;
@@ -160,9 +176,30 @@ footer section:nth-of-type(1) ul {
 
 footer section:nth-of-type(1) li {
 	margin: 0.5em;
-	display: flex;
-	flex-direction: column;
 	font-weight: bold;
+}
+
+/*Bron: https://www.youtube.com/watch?v=n9yI6fjkrfE & tijdens feedback gesprek (media queries)*/
+/*Bron: https://www.w3schools.com/css/css_grid.asp & https://www.youtube.com/watch?v=3T0gjtXRNC0 (grids in css responsive maken) (grid layout guide) & tijdens feedback gesprek*/
+
+
+@media (width > 700px) {
+	footer section:nth-of-type(1) ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+		footer section:nth-of-type(1) li{
+		font-size: 1.2em;
+		margin-top: 2em;
+	}
+
+	footer section:nth-of-type(1) ul li img {
+		width: 40%;
+		padding-bottom: 1em;
+		position: start;
+}
+
 }
 
 /* Footer 2e sectie met social media links */
@@ -171,8 +208,8 @@ footer section:nth-of-type(1) li {
 footer section:nth-of-type(2) {
 	background-image: none;
 	width: 100%;
-    background-color: #410c00;
-	color: #eee;
+    background-color: var(--color-background);
+	color: var(--color-text);
 	font-size: 20px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -186,7 +223,7 @@ footer section:nth-of-type(2) p {
 footer section:nth-of-type(2) ul {
 	display: flex;
 	flex-direction: row;
-    color: white;
+    color: var(--color-text2);
 	list-style: none;
 	margin-left: 1em;
 }
@@ -198,12 +235,14 @@ footer section:nth-of-type(2) li {
 
 
 
+
+
 /* Footer derde sectie met grote navigatie */
 footer section:nth-of-type(3) {
 	background-image: none;
 	width: 100%;
-    background-color: #410c00;
-	color: #eee;
+    background-color: var(--color-background);
+	color: var(--color-text);
 	font-size: 20px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -234,8 +273,8 @@ footer section:nth-of-type(3) li{
 footer section:nth-of-type(4) {
 	background-image: none;
 	width: 100%;
-    background-color: #410c00;
-	color: #eee;
+    background-color: var(--color-background);
+	color: var(--color-text);
 	font-size: 15px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -258,7 +297,7 @@ footer button {
 	font-size: 14px;
 	appearance: none;
 	border: none;
-	background-image:linear-gradient(45deg, white 50%, #410c00 50%);
+	background-image:linear-gradient(45deg, var(--color-text) 50%, var(--color-background) 50%);
 	background-size:250% 100%;
 	background-position:right;
 	color: white;
@@ -274,7 +313,7 @@ footer button {
 
 footer  button:hover {
 	cursor: pointer;
-	color: #410c00;
+	color: var(--color-text);
 	background-position:left;
 }
 
@@ -301,7 +340,7 @@ button {
 	font-size: 14px;
 	appearance: none;
 	border: none;
-	background-image:linear-gradient(45deg, white 50%, blue 50%);
+	background-image:linear-gradient(45deg, var(--color-text) 50%, var(--color-button) 50%);
 	background-size:250% 100%;
 	background-position:right;
 	color: white;
@@ -314,6 +353,6 @@ button {
 
 button:hover {
 	cursor: pointer;
-	color: blue;
+	color: var(--color-button);
 	background-position:left;
 }

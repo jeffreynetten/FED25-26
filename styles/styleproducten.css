@@ -8,21 +8,6 @@
 
 
 
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -34,8 +19,7 @@
 main section:nth-of-type(1) {
 	justify-content: space-between;
 	align-items: wrap;
-	color: white;
-	background-color: #410c00;
+	color: var(--color-text);
 	background-position: center;
 	background-repeat: repeat;
 	font-family: "BeniBolt" ;
@@ -45,19 +29,55 @@ main section:nth-of-type(1) {
 main section:nth-of-type(1) h1 {
     margin-left: 0.5em;
 	margin-right: 0.5em;
-	padding-bottom: 6em;
-	padding-top: 6em;
-	font-size: 48px;
+	font-size: 2.2em;
 	font-family: "BeniBolt" ;
 	text-align: center;
+	padding-top: 30%;
+	padding-bottom: 20%;
+}
+
+main section:nth-of-type(1) img:nth-of-type(1) {
+position: absolute;
+z-index: -1;
+width: 100%;
+display: none;
+}
+
+main section:nth-of-type(1) img:nth-of-type(2) {
+position: absolute;
+z-index: -1;
+width: 150%;
+display: block;
+}
+
+@media (width > 800px) {
+main section:nth-of-type(1) h1 {
+	padding-top: 15%;
+    padding-bottom: 15%;
+	font-size: 4em
+}
+
+main section:nth-of-type(1) img:nth-of-type(2) {
+position: absolute;
+z-index: -1;
+width: 100%;
+}
+
+main section:nth-of-type(1) img:nth-of-type(1) {
+position: absolute;
+z-index: -1;
+height: 100%;
+display: none;
+}
+
 }
 
 
 /* 2e section waar het gaat over snickers creamy */
 
 main section:nth-of-type(2) {
-	color: white;
-	background-color: #fdc33e;
+	color: var(--color-text);
+	background-color: var(--color-background);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "BeniBolt" ;
@@ -95,16 +115,58 @@ main section:nth-of-type(2) button {
         margin-left: 5%;
 }
 
+@media (width > 700px) {
+	main section:nth-of-type(2){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+		gap: 2em;
+		padding-top: 2em;
+	}
+
+	main section:nth-of-type(2) img {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		width: 19em;
+	}
+
+	main section:nth-of-type(2) h2 {
+		align-self: end;
+		padding-bottom: 0%;
+		margin-bottom: 0%;
+		font-size: 2.5em;
+	}
+}
+
+@media (width > 1000px) {
+	main section:nth-of-type(2) h2 {
+		font-size: 3em;
+	}
+
+	main section:nth-of-type(2) img {
+		width: 23em;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 /* 3e section waar het filteren van producten mogelijk is */
 
 main section:nth-of-type(3) {
 	width: 100%;
-	background-color:#eee;
+	background-color:var(--color-basebackground3);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "Ffmark" ;
+	color: var(--color-text2);
 }
 
 
@@ -143,7 +205,7 @@ margin-left: 2em;
 margin-right: 2em;
 padding-bottom: 2em;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
 main section:nth-of-type(3) li {
@@ -151,7 +213,7 @@ align-items: center;
 list-style: none;
 font-size: 25px;
 text-transform: uppercase;
-background-color: #410c00;
+background-color: var(--color-background);
 border-radius: 2em;
 margin: 1em;
 align-content: center;
@@ -176,7 +238,7 @@ main section:nth-of-type(3) p {
 	font-size: 0.7em;
 	width: 80%;
 	text-transform: none;
-	color: white;
+	color: var(--color-text);
 	margin-left: 2em;
 	margin-right: 2em;
     grid-column-start: 1;
@@ -202,8 +264,7 @@ main section:nth-of-type(3) p {
 /* 4e section waarbij er word doorgelinkt naar de geschiedenis van Snickers*/
 
 main section:nth-of-type(4) {
-	color: white;
-	background-color:#410c00;
+	color: var(--color-text);
 	width: 100%;
 	font-family: "BeniBolt" ;
 	display: flex;
@@ -237,4 +298,53 @@ main section:nth-of-type(4) button {
 	width: 13em;
 	font-size: 0.6em;
 }
+
+main section:nth-of-type(4) img:nth-of-type(1) {
+	position: absolute;
+	height: auto;
+	padding-bottom: 20em;
+	z-index: -1;
+	background-size: cover;
+	display: block;
+	max-width: 100%;
+}
+
+main section:nth-of-type(4) img:nth-of-type(2) {
+	display: none;
+}
+
+@media (width > 700px) {
+main section:nth-of-type(4) img:nth-of-type(1) {
+	display: none;
+	}
+
+	main section:nth-of-type(4) img:nth-of-type(2) {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+
+main section:nth-of-type(4) h3 {
+	font-size: 60px;
+
+}
+    
+}
+
+@media (width > 900px) {
+main section:nth-of-type(4) img:nth-of-type(1) {
+	display: none;
+	}
+
+	main section:nth-of-type(4) img:nth-of-type(2) {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+    
+}
+
+
 

@@ -34,15 +34,19 @@
 	--color-basebackground:white;
 	--color-text2:black;
 	--color-basebackground3:white;
+	--color-footerbackground:#ffd166;
+	--color-basebackground4: white;
 
 	--colordarkmode-text:white;
-	--colordarkmode-background:#353535;
-	--colordarkmode-button:darkgrey;
-	--colordarkmode-background2:#353535;
-	--colordarkmode-button2:#410c00;
+	--colordarkmode-background:rgb(27, 27, 27);
+	--colordarkmode-button:black;
+	--colordarkmode-background2:black;
+	--colordarkmode-button2:gray;
 	--colordarkmode-basebackground: #353535;
 	--colordarkmode-text2:white;
-	--colordarkmode-basebackground3:#410c00;
+	--colordarkmode-basebackground3:rgb(27, 27, 27);
+	--colordarkmode-footerbackground: #353535;
+	--colordarkmode-basebackground4: black;
 
 }
 
@@ -56,7 +60,19 @@
 		--color-text2: var(--colordarkmode-text2);
 		--color-basebackground: var(--colordarkmode-basebackground);
 		--color-basebackground3:var(--colordarkmode-basebackground3);
+		--color-footerbackground:var(--colordarkmode-footerbackground);
+		--color-basebackground4:var(--colordarkmode-basebackground4);
 	}
+
+
+	/*bron: border styles: https://www.w3schools.com/css/css_border_sides.asp */
+
+	header {
+		border-bottom-style: solid;
+		border-width: thin;	
+	}
+
+
 }
 
 
@@ -94,12 +110,22 @@ header nav {
 	align-items:center;
 	justify-content: space-between;
 	position: relative;
-	flex-wrap: wrap;
 }
 
 /*Bron: https://www.youtube.com/watch?v=dMxOojFq2ho&t=69s (nth of type)
 */
 
+@media (width < 900px) {
+	header ul:nth-of-type(1){
+    display: none;
+	}
+}
+
+@media (width > 900px) {
+	header nav button{
+    display: none;
+	}
+}
 
 header nav img:nth-of-type(1) {
 	width: 100px;
@@ -107,18 +133,9 @@ header nav img:nth-of-type(1) {
 	margin: 20px;
 }
 
-
-
-header nav img:nth-of-type(2) {
-	width: 3em;
-	height: 3em;
-	margin: 20px;    
-}
-
 header ul {
 	display: flex;
 	gap: 30px;
-	flex-wrap: wrap;
 }
 
 header li {
@@ -136,8 +153,61 @@ header ul li a:hover{
 	color: var(--color-button2);
 }
 
+/*hamburger menu bron: https://www.youtube.com/watch?v=aNDqzlAKmZc en de les van Sanne*/
 
-@media (max-width: 768px) {}
+header ul:nth-of-type(2){
+	background-color:var(--color-background);
+	height: 100vh;
+	width: 100%;
+	max-width: 450px;
+	position: fixed;
+	top: 0;
+	right: -450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	transition: .3s ease;
+	z-index: 1;
+}
+
+header ul.active{
+	right: 0;
+}
+
+header button{
+	display: grid;
+	justify-content: end;
+	align-content: center;
+	width: 2em;
+	font-size: 1em;
+	background: none;
+	z-index: 1;
+	appearance: none;
+	border: none;
+	aspect-ratio: 1;
+    margin-left: 1em;
+}
+
+header button span {
+display: block;
+width: 1.5em;
+height: 0.2em;
+background-color: var(--color-button2);
+border-radius: .1em;
+grid-column-start: 1;
+grid-row-start: 1;
+}
+
+header button span:nth-of-type(1){
+	translate: 0 -.5em;
+}
+
+header button span:nth-of-type(3){
+	translate: 0 .5em;
+}
+
 
 
 
@@ -150,8 +220,8 @@ header ul li a:hover{
 footer section:nth-of-type(1) {
 	background-image: none;
 	width: 100%;
-    background-color: var(--color-button2);
-	color: var(--color-text);
+    background-color: var(--color-footerbackground);
+	color: var(--color-text2);
 	font-size: 20px;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-variant-caps: all-petite-caps;
@@ -167,23 +237,29 @@ footer section:nth-of-type(1) ul li img {
 }
 
 footer section:nth-of-type(1) ul {
-	margin-left: 1em;
 	margin-bottom: 2em;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 }
 
-footer section:nth-of-type(1) li {
+footer section:nth-of-type(1) li a {
 	margin: 0.5em;
-	font-weight: bold;
+	justify-content: center;
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+	color: var(--color-text2);
+	font-size: 1.2em;
+	margin-left: 1.5em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Bron: https://www.youtube.com/watch?v=n9yI6fjkrfE & tijdens feedback gesprek (media queries)*/
 /*Bron: https://www.w3schools.com/css/css_grid.asp & https://www.youtube.com/watch?v=3T0gjtXRNC0 (grids in css responsive maken) (grid layout guide) & tijdens feedback gesprek*/
 
 
-@media (width > 700px) {
+@media (width > 880px) {
 	footer section:nth-of-type(1) ul{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -194,11 +270,17 @@ footer section:nth-of-type(1) li {
 		margin-top: 2em;
 	}
 
+
 	footer section:nth-of-type(1) ul li img {
 		width: 40%;
 		padding-bottom: 1em;
 		position: start;
 }
+
+    footer section:nth-of-type(3) {
+		display: grid;
+		grid-template-rows: 1fr;
+	}
 
 }
 
@@ -237,6 +319,7 @@ footer section:nth-of-type(2) li {
 
 
 
+
 /* Footer derde sectie met grote navigatie */
 footer section:nth-of-type(3) {
 	background-image: none;
@@ -255,17 +338,33 @@ footer section:nth-of-type(3) nav{
 
 footer section:nth-of-type(3) ul {
 	display: grid;
-    grid-template-columns:1fr 1fr ;
+    grid-template-columns:1fr 1fr;
+	gap: 1em;
 	font-weight: bold;
 	list-style: none;
     padding-bottom: 1em;
-	padding-left: 1em;
+	padding-left: 2em;
 }
 
 footer section:nth-of-type(3) li{
 	font-size: 15px;
-	margin: 1em;
-	text-align: left;
+	text-align: start;
+}
+
+footer section:nth-of-type(3) li a {
+	list-style: none;
+	text-decoration: none;
+	color: var(--color-text);
+	font-size: 1em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-variant-caps: all-petite-caps;
+}
+
+@media (width > 700px) {
+	footer section:nth-of-type(3) ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
 
 /* Footer 4e sectie met eindtekst */
@@ -280,14 +379,19 @@ footer section:nth-of-type(4) {
 	font-variant-caps: all-petite-caps;
 	display: flex;
 	flex-direction: column;
-	
 }
 
 footer section:nth-of-type(4) p {
     font-size: 15px;
-	margin-left: 5%;
+	margin-left: 2.5em;
 	margin-right: 10%;
 	text-align: left;
+}
+
+footer section:nth-of-type(4) p:nth-of-type(4){
+	font-size: 1.7em;
+	padding-top: 1em;
+	margin-left: 1.2em;
 }
 
 footer button {
@@ -306,23 +410,31 @@ footer button {
 	transition: 0.5s;
 	text-transform: uppercase;
 	outline-style:groove;
-	margin-left: 5%;
+	margin-left: 3em;
 	margin-top: 1em;
 	margin-bottom: 5em;
 }
 
 footer  button:hover {
 	cursor: pointer;
-	color: var(--color-text);
+	color: var(--colordarkmode-basebackground);
 	background-position:left;
 }
 
 footer a {
 	font-family: "BeniBolt" ;
 	font-size: 2.2em;
-	margin-left: 5%;
 	margin-top: 1em;
 	text-align: left;
+}
+
+footer a {
+	font-family: "BeniBolt" ;
+	font-size: 2.2em;
+	margin-top: 1em;
+	text-align: left;
+	text-decoration: none;
+	color: var(--color-text);
 }
 
 footer p:nth-of-type(3) {
@@ -333,7 +445,7 @@ footer p:nth-of-type(3) {
 
 /* Button animatie en opmaak */
 
-button {
+main button {
 	width: 8em;
 	height: 4em;
 	font:inherit;
@@ -351,8 +463,9 @@ button {
 }
 
 
-button:hover {
+main button:hover {
 	cursor: pointer;
 	color: var(--color-button);
 	background-position:left;
 }
+

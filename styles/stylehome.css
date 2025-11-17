@@ -291,7 +291,6 @@ main section:nth-of-type(5) button {
 main section:nth-of-type(5) img:nth-of-type(1) {
 	position: absolute;
 	height: auto;
-	padding-bottom: 20em;
 	z-index: -1;
 	background-size: cover;
 	display: block;

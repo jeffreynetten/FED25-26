@@ -56,8 +56,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  -Niet aanwezig in de les. Ik ga proberen iemand te vinden die dit voor mij kan dan.
-  Of is het oke als ik dit zelf doe?
+  De test heb ik hieronder gedaan met mijn vriendin aangezien ik niet in de les aanwezig was. De voornamelijkste bevindeningen zijn hoeveel divs en spans er op de website worden gebruikt.
+  Ook voor elementen met eigenlijk hele duidelijke benamingen.
+  <img src="readme-images/test.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/stest2.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/test3.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/test4.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/test5.jpeg" width="375px" alt="omschrijving van de pagina">
 
 </details>
 

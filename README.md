@@ -59,10 +59,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De test heb ik hieronder gedaan met mijn vriendin aangezien ik niet in de les aanwezig was. De voornamelijkste bevindeningen zijn hoeveel divs en spans er op de website worden gebruikt.
   Ook voor elementen met eigenlijk hele duidelijke benamingen.
   <img src="readme-images/test.jpeg" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/stest2.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/test2.jpeg" width="375px" alt="omschrijving van de pagina">
   <img src="readme-images/test3.jpeg" width="375px" alt="omschrijving van de pagina">
   <img src="readme-images/test4.jpeg" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/test5.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/test 5.jpeg" width="375px" alt="omschrijving van de pagina">
 
 </details>
 
@@ -156,6 +156,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Ik heb deze test zelf gedaan en heb hierbij mijn eigen site getest.
+  <img src="readme-images/t1" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t2" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t3" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t4" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t5" width="375px" alt="omschrijving van de pagina">
+
 </details>
 
 
@@ -213,6 +220,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -225,6 +233,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
+  het is mij helaas nog niet gelukt om de pauze en start knop toe te voegen aan de video.
+  
 </details>
 
 

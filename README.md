@@ -251,5 +251,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   14. https://www.youtube.com/watch?v=n9yI6fjkrfE (media queries)
   15. https://www.w3schools.com/css/css_border_sides.asp (border-sides)
   16. https://www.youtube.com/watch?v=aNDqzlAKmZc (hamburger menu)
+  17. https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts#nvda-nvda_shortcut_keys (screen reader)
 
 </details>

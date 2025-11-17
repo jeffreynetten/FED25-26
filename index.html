@@ -17,15 +17,31 @@
 <body>
 <header>
 <nav>
-	<img src="images/SNK_3D_LOGO.svg" alt="logo">
+	<img src="images/SNK_3D_LOGO.svg" alt="logo van snickers" aria-label="homepagina van snickers">
 
 	<ul>
-			<li><a href="#">onze producten</a></li>
+			<li><a href="productenpagina.html">onze producten</a></li>
 			<li><a href="#">recepten</a></li>
 			<li><a href="#">ons verhaal</a></li>
-			<li><a href="#">Waar te koop</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#">waar te koop</a></li>
+			<li><a href="#">contact</a></li>
 	</ul>
+	
+	
+
+	<ul aria-hidden="true">
+			<li>onze producten</li>
+			<li>recepten</li>
+			<li>ons verhaal</li>
+			<li>waar te koop</li>
+			<li>contact</li>	
+	</ul>
+
+	<button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
 
 </nav>
@@ -35,9 +51,11 @@
 <main>
 <section>
 
-	    <p>trek?</p>
-	        <h1>je bent jezelf niet als je trek hebt.</h1>
-	<button>producten bekijken.</button>
+	<p>trek?</p>
+	<h1>je bent jezelf niet als je trek hebt.</h1>
+
+	<button aria-label="bekijk alle producten">producten bekijken.</button>
+
 	<video autoplay  muted loop src="assets/SnickersVideo.mp4" type="video/mp4"></video>
 </section>
 
@@ -45,9 +63,9 @@
 
 
 <section>
-	<img src="images/snickerscreamy.png" alt="" id="bewegen">
+	<img src="images/snickerscreamy.png" alt="snickers creamy chocolade reep">
 	    <h2>snickers creamy. de vertrouwde smaak van snickers nu met een dikke laag smeuige pindakaas!</h2>
-	        <button>probeer nu.</button>
+	        <button aria-label="probeer nu de snickers creamy reep">probeer nu.</button>
 </section>
 
 
@@ -56,24 +74,33 @@
 <section>
 	<h2>onze favorieten.</h2>
 <ul>
-	<li><img src="images/1snickers.jpeg" alt="" id="snickerbewegen">snickers original <button>KIES MIJ.</button></li>
-	<li><img src="images/2snicker.jpeg" alt="" id="snickerbewegen">snickers duo <button>KIES MIJ.</button></li>
-	<li><img src="images/snickercream.jpeg" alt="" id="snickerbewegen">snickers creamy <button>KIES MIJ.</button></li>
+	<li>
+		<img src="images/1snickers.jpeg" alt="1 snickers reep">snickers original 
+		<button aria-label="kies 1 snickers reep">KIES MIJ.</button>
+	</li>
+	<li>
+		<img src="images/2snicker.jpeg" alt="2 snickers repen">snickers duo
+		<button aria-label="kies 2 snickers repen">KIES MIJ.</button>
+	</li>
+	<li>
+		<img src="images/snickercream.jpeg" alt="1 snickers creamy reep">snickers creamy 
+		<button aria-label="kies snickers creamy reep">KIES MIJ.</button>
+	</li>
 </ul>
 </section>
 
 <section>
-	<img src="images/pindakaramelnoga.avif" alt="">
-	<img src="images/snickersbreed.jpeg" alt="">
+	<img src="images/pindakaramelnoga.avif" alt="ingredienten van snickers, karamel, noga en pinda">
+	<img src="images/snickersbreed.jpeg" alt="ingredienten van snickers, karamel, noga en pinda">
 </section>
 
 <section>
-	<img src="images/snickersBarAchtergrond3.png" alt="">
-	<img src="images/snickersBarAchtergrond4.png" alt="">
+	<img src="images/snickersBarAchtergrond3.png" alt="verschillende snickers te zien op de achtergrond">
+	<img src="images/snickersBarAchtergrond4.png" alt="verschillende snickers te zien op de achtergrond">
 	<p>tijd om te chillen.</p>
        <h3>snickers ice cream.</h3>
 	   <p>net toen je dacht dat SNICKERS niet cooler kon.</p>
-	   <button>Meer Bekijken.</button>
+	   <button aria-label="meer soorten snickers ijs openen">Meer Bekijken.</button>
 </section>
 
 </main>
@@ -82,32 +109,32 @@
 <footer>
 	<section>
 		<ul>
-			<li><img src="images/logo.svg" alt=""></li>
-			<li>contact en hulp</li>
-			<li>ons verhaal</li>
-			<li>waar te koop</li>
+			<li><img src="images/logo.svg" alt="logo van snickers"></li>
+			<li><a href="#">contact en hulp</a></li>
+			<li><a href="#">ons verhaal</a></li>
+			<li><a href="#">waar te koop</a></li>
 		</ul>
 	</section>
 
 	<section>
 		<p>volg ons op</p>
 		<ul>
-			<li><img src="images/youtube.svg" alt=""></li>
-			<li><img src="images/facebook.svg" alt=""></li>
+			<li aria-label="link naar facebook"><a href="#"><img src="images/youtube.svg" alt="youtube link van snickers"></a></li>
+			<li aria-label="link naar youtube"><a href="#"><img src="images/facebook.svg" alt="facebok link van snickers"></a></li>
 		</ul> 
 	</section>
 
 <section>
 	<nav>
 		<ul>
-			<li>opmerkingen voor ouders</li>
-			<li>Transparantie van de toeleveringsketen</li>
-			<li>Wet moderne slavernij</li>
-			<li>Cookieverklaring</li>
-			<li>Cookie-instellingen</li>
-			<li>Privacybeleid</li>
-			<li>Juridisch</li>
-			<li>Toegankelijkheid</li>
+			<li><a href="#">opmerkingen voor ouders</a></li>
+			<li><a href="#">Transparantie van de toeleveringsketen</a></li>
+			<li><a href="#">Wet moderne slavernij</a></li>
+			<li><a href="#">Cookieverklaring</a></li>
+			<li><a href="#">Cookie-instellingen</a></li>
+			<li><a href="#">Privacybeleid</a></li>
+			<li><a href="#">Juridisch</a></li>
+			<li><a href="#">Toegankelijkheid</a></li>
 		</ul>
 	</nav>
 </section>
@@ -117,8 +144,8 @@
 		<p>This site includes information, games, advertisements and promotional offers featuring our products. Children should get a parent's permission before visiting any website or giving personal information. You must be 18 or older to shop online.</p>
 		<p>©2025 Mars or Affiliates. Third party trademarks are property of their respective owners.</p>
 
-		<a>bekijk meer merken van mars wrigley</a>
-		<button>bekijk alles</button>
+		<p>bekijk meer merken van mars wrigley</p>
+		<button aria-label="bekijk de andere merken van mars wringley">bekijk alles</button>
 	</section>
 
 
@@ -128,3 +155,4 @@
 </body>
 	
 </html>
+

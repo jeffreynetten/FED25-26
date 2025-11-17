@@ -249,5 +249,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   12. https://www.youtube.com/watch?v=XGKj4HtIcGo (custom properties)
   13. https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping (image swapping)
   14. https://www.youtube.com/watch?v=n9yI6fjkrfE (media queries)
+  15. https://www.w3schools.com/css/css_border_sides.asp (border-sides)
 
 </details>

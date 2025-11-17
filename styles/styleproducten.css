@@ -29,7 +29,7 @@ main section:nth-of-type(1) {
 main section:nth-of-type(1) h1 {
     margin-left: 0.5em;
 	margin-right: 0.5em;
-	font-size: 2.2em;
+	font-size: 3em;
 	font-family: "BeniBolt" ;
 	text-align: center;
 	padding-top: 30%;
@@ -40,14 +40,14 @@ main section:nth-of-type(1) img:nth-of-type(1) {
 position: absolute;
 z-index: -1;
 width: 100%;
-display: none;
+display: block;
 }
 
 main section:nth-of-type(1) img:nth-of-type(2) {
 position: absolute;
 z-index: -1;
-width: 150%;
-display: block;
+width: 100%;
+display: none;
 }
 
 @media (width > 800px) {
@@ -61,6 +61,7 @@ main section:nth-of-type(1) img:nth-of-type(2) {
 position: absolute;
 z-index: -1;
 width: 100%;
+display: block;
 }
 
 main section:nth-of-type(1) img:nth-of-type(1) {
@@ -77,7 +78,7 @@ display: none;
 
 main section:nth-of-type(2) {
 	color: var(--color-text);
-	background-color: var(--color-background);
+	background-color: var(--color-footerbackground);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "BeniBolt" ;
@@ -90,7 +91,7 @@ main section:nth-of-type(2) img {
 	width: 14em;
 }
 
-#bewegen {
+main section:nth-of-type(2) img {
   animation: MoveUp 3s linear infinite;}
 
 @keyframes MoveUp {
@@ -162,7 +163,7 @@ main section:nth-of-type(2) button {
 
 main section:nth-of-type(3) {
 	width: 100%;
-	background-color:var(--color-basebackground3);
+	background-color:var(--color-basebackground4);
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: "Ffmark" ;
@@ -345,6 +346,7 @@ main section:nth-of-type(4) img:nth-of-type(1) {
 	}
     
 }
+
 
 
 

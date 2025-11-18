@@ -157,11 +157,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   Ik heb deze test zelf gedaan en heb hierbij mijn eigen site getest.
-  <img src="readme-images/t1" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/t2" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/t3" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/t4" width="375px" alt="omschrijving van de pagina">
-  <img src="readme-images/t5" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t1.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t2.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t3.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t4.jpeg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/t5.jpeg" width="375px" alt="omschrijving van de pagina">
 
 </details>
 

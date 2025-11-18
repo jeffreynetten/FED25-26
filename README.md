@@ -219,13 +219,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/src10.png" width="375px">
-  <img src="readme-images/src6.png" width="375px">
-  <img src="readme-images/src8.png" width="375px">
-  <img src="readme-images/src11.png" width="375px">
-  <img src="readme-images/src14.png" width="375px">
-  <img src="readme-images/src16.png" width="375px">
-  <img src="readme-images/src18.png" width="375px">
+  <img src="readme-images/scr10.png" width="375px">
+  <img src="readme-images/scr6.png" width="375px">
+  <img src="readme-images/scr8.png" width="375px">
+  <img src="readme-images/scr11.png" width="375px">
+  <img src="readme-images/scr14.png" width="375px">
+  <img src="readme-images/scr16.png" width="375px">
+  <img src="readme-images/scr18.png" width="375px">
   
 
 
@@ -235,20 +235,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Maar dit jaar is dat helemaal veranderd. Door met volledige focus hard te werken hieraan ben ik eindelijk blij en trots op mijn eindproduct.
 
   Wat naar mijn mening goed is gegaan is dat mijn volledige website nu responsive is:
-  <img src="readme-images/src8.png" width="375px">
-  <img src="readme-images/src9.png" width="375px">
+  <img src="readme-images/scr8.png" width="375px">
+  <img src="readme-images/scr9.png" width="375px">
   Dit is iets dat ik aan het begin van dit vak zeker nog niet eens aan durfde te beginnen.
 
   Waar ik ook trots op ben is hoe de grids werken op verschillende beeldgrotes:
-  <img src="readme-images/src6.png" width="375px">
-  <img src="readme-images/src7.png" width="375px">
+  <img src="readme-images/scr6.png" width="375px">
+  <img src="readme-images/scr7.png" width="375px">
 
   Daarnaast ben ik heel blij met de animaties bij de hovers op de buttons en navigatie
-  <img src="readme-images/src16.png" width="375px">
-  <img src="readme-images/src15.png" width="375px">
+  <img src="readme-images/scr16.png" width="375px">
+  <img src="readme-images/scr15.png" width="375px">
 
   Ook ben ik blij met de customproperties die ik heb toegevoegd met dan onder andere de nightmode die de snickers website zelf niet had.
-  <img src="readme-images/src18.png" width="375px">
+  <img src="readme-images/scr18.png" width="375px">
 
   Al met al ben ik heel trots dat ik het gevoel heb dat ik dit eindelijk kan. Iets waarvan ik begin dit blok nog geen idee had hoe ik echt moest beginnen om een tof eindproduct te krijgen is nu iets geworden waar ik met plezier aan heb zitten werken.
 
